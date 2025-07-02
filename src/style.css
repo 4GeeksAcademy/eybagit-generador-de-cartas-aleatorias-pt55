@@ -1,5 +1,31 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+.carta {
+  --ancho: 380px;
+  --alto: 500px;
+  width: var(--ancho);
+  height: var(--alto);
+}
+
+.carta > span {
+  font-size: calc(var(--alto) / 2.5);
+}
+
+.simbolo {
+  font-size: calc(var(--alto) / 4);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.simbolo.superior {
+  top: -5%;
+  left: 3%;
+}
+
+.simbolo.inferior {
+  bottom: -5%;
+  right: 3%;
+  transform: rotate(180deg);
 }
