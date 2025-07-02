@@ -1,35 +1,44 @@
-<!doctype html>
-<html lang="en">
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
-    <!-- Fontawesome is our recomended library for icons -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Generador de Cartas Aleatorias</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body class="bg-success d-flex flex-column m-0 min-vh-100">
+    <main
+      id="caja-carta"
+      class="flex-grow-1 position-relative d-flex justify-content-center align-items-center mb-5"
+    ></main>
+    <footer class="fixed-bottom d-flex justify-content-center mt-5 mb-3 ms-5">
+      <div class="d-inline-flex gap-2 ms-5">
+        <input
+          id="ancho-carta"
+          type="number"
+          placeholder="Ancho px"
+          class="form-control form-control-sm w-25"
+        />
+        <input
+          id="alto-carta"
+          type="number"
+          placeholder="Alto px"
+          class="form-control form-control-sm w-25"
+        />
+        <button id="boton-nueva-carta" class="btn btn-light btn-sm">
+          Nueva Carta
+        </button>
+        <button id="boton-temporizador" class="btn btn-light btn-sm">
+          ⏱ Activar
+        </button>
       </div>
-    </div>
-
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
+    </footer>
+    <script type="module" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
