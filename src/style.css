@@ -1,8 +1,6 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 .carta {
-  --ancho: 380px;
-  --alto: 500px;
   width: var(--ancho);
   height: var(--alto);
 }
